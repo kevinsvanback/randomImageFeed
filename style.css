@@ -1,0 +1,41 @@
+/* Import font from google */
+
+@import url('https://fonts.googleapis.com/css2?family=Yaldevi:wght@400&display=swap');
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Yaldevi', 'sans-serif';
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
+  background-color: rgb(235, 223, 208);
+}
+
+.title {
+  margin: 20px 0 0;
+}
+
+/* Max width 1000px and images 300px makes maximum 3 images wide */
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 1000px;
+}
+
+/* Make all images the same size */
+
+.container img {
+  object-fit: cover;
+  margin: 10px;
+  height: 300px;
+  width: 300px;
+  max-width: 100%;
+}
